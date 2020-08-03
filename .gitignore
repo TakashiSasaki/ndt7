@@ -1,0 +1,11 @@
+.bash_history
+.bashrc
+.cache/
+.profile
+go/
+go1.14.6.linux-amd64.tar.gz
+.gitconfig
+.selected_editor
+.viminfo
+.wget-hsts
+ndt7-client-go/
