@@ -10,3 +10,7 @@ go1.14.6.linux-amd64.tar.gz
 .wget-hsts
 ndt7-client-go/
 .lesshst
+*T*.json
+latest-filename.js
+latest-speed.js
+latest.json
