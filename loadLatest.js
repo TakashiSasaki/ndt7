@@ -1,5 +1,5 @@
 function loadLatest(){
-	document.querySelector("#latest").innerText= speed;
+	document.querySelector("#latest-speed").value= speed;
 	speed = JSON.parse(speed);
 	document.querySelector("#DownloadValue").innerText = Math.round(speed.Download.Value) + " " + speed.Download.Unit;
 	document.querySelector("#UploadValue").innerText = Math.round(speed.Upload.Value) + " " + speed.Upload.Unit;
