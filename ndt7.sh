@@ -9,8 +9,10 @@ FILENAME=`date --iso-8601=minute`.json
 ${CLIENT_BIN} ${CLIENT_OPT} > ${JSON_DIR}/${FILENAME}
 cp ${JSON_DIR}/${FILENAME} ${JSON_DIR}/latest.json
 
-rm -f ${JSON_DIR}/latest.jsonv
-echo -n "var speed=" >>${JSON_DIR}/latest-speed.js
+FILESIZE=`ls -l latest.json | awk '{print $5}'`
+if [ ${FILESIZE} -lt 1000 ]; then exit 2; fi
+
+echo -n "var speed=" >${JSON_DIR}/latest-speed.js
 tail -n 1 ${JSON_DIR}/latest.json | jq -s -R . >>${JSON_DIR}/latest-speed.js
 echo -n ";" >>${JSON_DIR}/latest-speed.js
 
