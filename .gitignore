@@ -9,3 +9,4 @@ go1.14.6.linux-amd64.tar.gz
 .viminfo
 .wget-hsts
 ndt7-client-go/
+.lesshst
