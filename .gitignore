@@ -14,3 +14,5 @@ ndt7-client-go/
 latest-filename.js
 latest-speed.js
 latest.json
+*.swp
+history.csv
