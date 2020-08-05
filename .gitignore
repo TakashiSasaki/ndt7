@@ -16,3 +16,4 @@ latest-speed.js
 latest.json
 *.swp
 history.csv
+.ssh/
